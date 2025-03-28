@@ -137,3 +137,17 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Large Smartphones */
+@media (min-width: 320px) and (max-width: 768px) {
+  .section-about {
+    margin-top: 20rem;
+  }
+}
+
+/* Small Smartphones */
+@media (max-width: 575px) {
+  .section-about {
+    margin-top: 20rem;
+  }
+}

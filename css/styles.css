@@ -140,6 +140,30 @@ body {
   border-radius: 0.1rem;
 }
 
+/* Large Smartphones */
+@media (min-width: 320px) and (max-width: 768px) {
+  .header__topnav {
+    width: 40%;
+  }
+  .header__img {
+    height: 37rem;
+  }
+  .header__text-box {
+    margin-top: 30rem;
+  }
+}
+/* Small Smartphones */
+@media (max-width: 575px) {
+  .header__topnav {
+    width: 40%;
+  }
+  .header__img {
+    height: 37rem;
+  }
+  .header__text-box {
+    margin-top: 30rem;
+  }
+}
 .section-about {
   color: #000;
   width: 60%;
@@ -275,6 +299,19 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Large Smartphones */
+@media (min-width: 320px) and (max-width: 768px) {
+  .section-about {
+    margin-top: 20rem;
+  }
+}
+/* Small Smartphones */
+@media (max-width: 575px) {
+  .section-about {
+    margin-top: 20rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

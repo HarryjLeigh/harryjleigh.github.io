@@ -43,7 +43,6 @@
     margin: 2rem auto 0 auto;
   }
   &__topnav a {
-    // padding: 1.6rem 1rem;
     text-decoration: none;
     font-size: 1.7rem;
     color: #000;
@@ -55,5 +54,34 @@
   &__topnav a:hover {
     border-bottom: 0.3rem solid orange;
     border-radius: 0.1rem;
+  }
+}
+
+/* Large Smartphones */
+@media (min-width: 320px) and (max-width: 768px) {
+  .header__topnav {
+    width: 40%;
+  }
+
+  .header__img {
+    height: 37rem;
+  }
+
+  .header__text-box {
+    margin-top: 30rem;
+  }
+}
+
+/* Small Smartphones */
+@media (max-width: 575px) {
+  .header__topnav {
+    width: 40%;
+  }
+
+  .header__img {
+    height: 37rem;
+  }
+  .header__text-box {
+    margin-top: 30rem;
   }
 }
