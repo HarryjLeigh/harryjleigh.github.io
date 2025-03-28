@@ -1,0 +1,45 @@
+@use "../abstracts/variables";
+
+body {
+  font-family: variables.$font-stack;
+  font-weight: 400;
+  line-height: 1.7;
+  color: variables.$text-color;
+  padding: 3rem;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation: moveInLeft 1.25s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.7rem;
+    text-align: center;
+    animation: moveInRight 1.25s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10rem;
+}
+
+.primary-about,
+.secondary-about,
+.third-about {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "porfoliowebsite",
+  "version": "1.0.0",
+  "description": "portfolioWebsite",
+  "main": "main.js",
+  "scripts": {
+    "compile:sass": "sass scss/styles.scss css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}

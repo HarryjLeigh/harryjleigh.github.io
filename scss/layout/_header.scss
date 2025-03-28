@@ -1,0 +1,59 @@
+@use "../abstracts/variables";
+
+.header {
+  height: 90vh;
+  position: relative;
+
+  &__home-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__home-letter {
+    height: 3.5rem;
+    font-size: 3rem;
+  }
+
+  &__text-box {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20rem 0;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 40rem;
+  }
+
+  &__topnav {
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 2rem auto 0 auto;
+  }
+  &__topnav a {
+    // padding: 1.6rem 1rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 800;
+    flex: 0 1 0.4rem;
+    margin: auto;
+  }
+
+  &__topnav a:hover {
+    border-bottom: 0.3rem solid orange;
+    border-radius: 0.1rem;
+  }
+}
