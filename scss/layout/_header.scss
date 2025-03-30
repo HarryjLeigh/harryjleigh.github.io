@@ -35,25 +35,53 @@
   }
 
   &__topnav {
+    position: fixed;
+    top: 0;
+    height: 12rem;
+    left: 50%; /* move origin to middle of screen */
+    transform: translateX(-50%);
     overflow: hidden;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     width: 60%;
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: none;
   }
+
+  &__topnav.scrolled {
+    height: 5rem;
+    width: 40%;
+  }
+
   &__topnav a {
     text-decoration: none;
     font-size: 1.7rem;
     color: #000;
     font-weight: 800;
     flex: 0 1 0.4rem;
+    align-items: center;
     margin: auto;
+  }
+
+  &__topnav.scrolled a {
+    flex: 1 1 auto;
+    align-items: center;
   }
 
   &__topnav a:hover {
     border-bottom: 0.3rem solid orange;
     border-radius: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__topnav.scrolled a:hover {
+    border: none;
+    transition: all 0.3s ease;
+    color: orange;
   }
 }
 
@@ -80,5 +108,70 @@
 
   .header__text-box {
     margin-top: 20rem;
+  }
+}
+
+button {
+  width: 6rem;
+  border: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+#theme-icon {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1.5rem;
+}
+
+#theme-icon:hover {
+  transition: all 0.3s ease;
+  color: orange;
+}
+
+#theme-icon.scrolled {
+  height: 4rem;
+  width: 4rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.link-style {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.link-style.remove {
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  pointer-events: none;
+}
+
+/* Large Smartphones */
+@media (min-width: 576px) and (max-width: 1024px) {
+  .header__topnav {
+    width: 70%;
+  }
+  .header__img {
+    height: 30.1rem;
+  }
+
+  .header__topnav.scrolled {
+    height: 5rem;
+    width: 50%;
+  }
+}
+
+/* Small Smartphones */
+@media (max-width: 575px) {
+  .header__topnav {
+    width: 70%;
+  }
+  .header__img {
+    height: 30.1rem;
+  }
+
+  .header__topnav.scrolled {
+    height: 5rem;
+    width: 85%;
   }
 }

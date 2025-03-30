@@ -14,12 +14,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__topnav">
-        <a href=".">// home</a>
-        <a href="#about">// about</a>
-        <a href="#work">// work</a>
-        <a href="#contact">// contact</a>
-      </div>
+      <nav class="header__topnav" id="header__topnav">
+        <a class="header__topnav-links" href="."
+          ><span class="link-style">//</span> home</a
+        >
+        <a class="header__topnav-links" href="#about"
+          ><span class="link-style">//</span> about</a
+        >
+        <a class="header__topnav-links" href="#work"
+          ><span class="link-style">//</span> work</a
+        >
+        <a class="header__topnav-links" href="#contact"
+          ><span class="link-style">//</span> contact</a
+        >
+        <button id="toggle-theme">
+          <svg
+            id="theme-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            fill="currentColor"
+            width="10"
+            height="10"
+          >
+            <!-- Moon icon -->
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+          </svg>
+        </button>
+      </nav>
 
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -159,6 +180,7 @@
         <p>
           //
           <a
+            class="footer__box-links"
             href="https://www.linkedin.com/in/harry-leigh-a91761221/"
             target="_blank"
           >
@@ -167,9 +189,20 @@
         </p>
         <p>
           //
-          <a href="https://github.com/HarryjLeigh" target="_blank"> github</a>
+          <a
+            class="footer__box-links"
+            href="https://github.com/HarryjLeigh"
+            target="_blank"
+          >
+            github</a
+          >
         </p>
-        <p>// <a href="mailto:harryleigh@hotmail.co.uk"> email</a></p>
+        <p>
+          //
+          <a class="footer__box-links" href="mailto:harryleigh@hotmail.co.uk">
+            email</a
+          >
+        </p>
       </div>
       <p class="footer__paragraph">
         Website built by<a

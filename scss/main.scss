@@ -10,3 +10,16 @@
 @use "layout/header";
 
 @use "pages/home";
+
+body {
+  z-index: 0;
+  @include theme(variables.$bg-light, variables.$text-light) {
+    transition: background-color 0.3s, color 0.3s;
+
+    &.dark-mode {
+      @include theme(variables.$bg-dark, variables.$text-dark) {
+        transition: background-color 0.3s, color 0.3s;
+      }
+    }
+  }
+}

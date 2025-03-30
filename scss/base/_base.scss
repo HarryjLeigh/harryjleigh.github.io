@@ -15,4 +15,32 @@ html {
 
 body {
   box-sizing: border-box;
+  padding-top: 20rem;
+}
+
+body.dark-mode {
+  background-color: variables.$bg-dark;
+  color: variables.$text-dark;
+}
+
+body.dark-mode a {
+  background-color: variables.$bg-dark;
+  color: variables.$text-dark;
+  z-index: -1;
+}
+
+body.dark-mode .header__topnav {
+  background-color: variables.$bg-dark;
+  color: variables.$text-dark;
+  z-index: 1000;
+}
+
+body.dark-mode hr {
+  background-color: orange;
+}
+
+body.dark-mode button {
+  background-color: variables.$bg-dark;
+  color: variables.$text-dark;
+  border: none;
 }
