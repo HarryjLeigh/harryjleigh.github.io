@@ -26,7 +26,14 @@ body.dark-mode {
 body.dark-mode a {
   background-color: variables.$bg-dark;
   color: variables.$text-dark;
-  z-index: -1;
+  z-index: 10;
+}
+
+body.dark-mode .section__projects-links {
+  background-color: variables.$bg-dark;
+  color: variables.$text-dark;
+  z-index: 10;
+  opacity: 0;
 }
 
 body.dark-mode .header__topnav {
@@ -43,4 +50,8 @@ body.dark-mode button {
   background-color: variables.$bg-dark;
   color: variables.$text-dark;
   border: none;
+}
+
+body.dark-mode .section__toolkit-item {
+  border: 0.2rem solid white;
 }

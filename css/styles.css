@@ -23,7 +23,14 @@ body.dark-mode {
 body.dark-mode a {
   background-color: #121212;
   color: #fff;
-  z-index: -1;
+  z-index: 10;
+}
+
+body.dark-mode .section__projects-links {
+  background-color: #121212;
+  color: #fff;
+  z-index: 10;
+  opacity: 0;
 }
 
 body.dark-mode .header__topnav {
@@ -40,6 +47,10 @@ body.dark-mode button {
   background-color: #121212;
   color: #fff;
   border: none;
+}
+
+body.dark-mode .section__toolkit-item {
+  border: 0.2rem solid white;
 }
 
 @keyframes moveInLeft {
@@ -362,7 +373,7 @@ hr {
   background-color: orange;
   border-radius: 100rem;
   border: none;
-  margin: 25rem auto -15rem auto;
+  margin: 20rem auto 0 auto;
 }
 
 .primary-about {
@@ -380,11 +391,6 @@ hr {
 .section-projects {
   width: 60%;
   margin: 0 auto;
-  padding: 10rem 0;
-}
-
-.section-projects-header {
-  margin-top: -1rem;
 }
 
 .section-projects-grid {
@@ -464,6 +470,8 @@ hr {
 }
 
 footer {
+  height: 15rem;
+  text-align: center;
   font-size: 1.2rem;
 }
 
@@ -476,6 +484,55 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer__box {
+  margin-top: 10rem;
+}
+
+.section__toolkit {
+  width: 60%;
+  margin: -20rem auto auto auto;
+  text-align: center;
+}
+
+.section__toolkit-header {
+  font-size: 3rem;
+}
+
+.section__toolkit-list {
+  width: 60%;
+  list-style-type: none;
+  margin: 8rem auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 0rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.section__toolkit-item {
+  border: 0.25rem solid black;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  padding: 0.4rem 0.7rem;
+  transition: all 0.1s ease-in;
+  justify-self: center; /* Or center, or end, depending on layout */
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.section__toolkit-item:hover {
+  transform: translateY(-0.3rem);
+  background-color: orange;
+}
+
+@media (max-width: 2000px) {
+  .section__toolkit-list {
+    width: 50%;
+    grid-template-columns: auto auto auto;
+    column-gap: -10rem;
+  }
+}
 /* Large Smartphones */
 @media (min-width: 576px) and (max-width: 1024px) {
   .section-about {
@@ -486,6 +543,17 @@ footer a:hover {
   .secondary-about,
   .third-about {
     width: 80%;
+  }
+  .section__toolkit-list {
+    width: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 700px) {
+  .section__toolkit-list {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* Small Smartphones */
@@ -498,6 +566,11 @@ footer a:hover {
   .secondary-about,
   .third-about {
     width: 100%;
+  }
+  .section__toolkit-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
   }
 }
 body {
