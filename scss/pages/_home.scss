@@ -207,11 +207,11 @@ footer a:hover {
   }
 }
 
-@media (min-width: 576px) and (max-width: 700px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .section__toolkit-list {
     width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
-    // column-gap: 1rem;
+    row-gap: 1rem;
   }
 }
 
@@ -231,5 +231,12 @@ footer a:hover {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
+  }
+}
+
+@media (max-width: 539px) {
+  .section__toolkit-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 }
